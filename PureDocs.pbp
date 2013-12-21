@@ -7,29 +7,42 @@
   <section name="data">
     <explorer view="src\" pattern="0"/>
     <log show="1"/>
-    <lastopen date="2013-12-21 14:39" user="Markus" host="MARKUS-PC"/>
+    <lastopen date="2013-12-21 23:09" user="Markus" host="MARKUS-PC"/>
   </section>
   <section name="files">
     <file name="src\PureDocs.pb">
       <config load="0" scan="1" panel="1" warn="1" lastopen="1" panelstate="++"/>
-      <fingerprint md5="e6d0adcbc0fb017b88843bf5ee9a24ca"/>
+      <fingerprint md5="1c544f1009b3f31e56ffb493ddfee978"/>
     </file>
     <file name="src\Modules\Module.HTML5Generator.pb">
       <config load="0" scan="1" panel="1" warn="1" lastopen="0" panelstate="+++"/>
-      <fingerprint md5="73ef081e61c4e9eca4a67f2d26b040a4"/>
+      <fingerprint md5="abc72746e57f983a5ce6c51cbd10ff98"/>
     </file>
     <file name="src\Modules\Module.HTMLUtils.pb">
-      <config load="0" scan="1" panel="1" warn="1" lastopen="0" panelstate=""/>
-      <fingerprint md5="d41d8cd98f00b204e9800998ecf8427e"/>
+      <config load="0" scan="1" panel="1" warn="1" lastopen="1" panelstate="+++"/>
+      <fingerprint md5="18cfcdb11de4bc69faf41586b5cb33c1"/>
     </file>
   </section>
   <section name="targets">
-    <target name="Default Target" enabled="1" default="1">
+    <target name="Windows x64" enabled="1" default="1">
       <inputfile value="src\PureDocs.pb"/>
-      <outputfile value="bin\PureDocs.exe"/>
-      <commandline value="../src/Modules/Module.HTML5Generator.pb"/>
-      <executable value="bin\PureDocs.exe"/>
-      <options xpskin="1" debug="1"/>
+      <outputfile value="bin\x64\PureDocs.exe"/>
+      <compiler version="PureBasic 5.21 LTS (Windows - x64)"/>
+      <commandline value="../src/Modules"/>
+      <executable value="bin\x64\PureDocs.exe"/>
+      <options unicode="1" xpskin="1" debug="1"/>
+      <temporaryexe value="source"/>
+      <tools>
+        SYNTAX_CHECK
+      </tools>
+    </target>
+    <target name="Windows x86" enabled="1" default="0">
+      <inputfile value="src\PureDocs.pb"/>
+      <outputfile value="bin\x86\PureDocs.exe"/>
+      <compiler version="PureBasic 5.21 LTS (Windows - x86)"/>
+      <commandline value="../src/Modules"/>
+      <executable value="bin\x86\PureDocs.exe"/>
+      <options unicode="1" xpskin="1" debug="1"/>
       <temporaryexe value="source"/>
       <tools>
         SYNTAX_CHECK

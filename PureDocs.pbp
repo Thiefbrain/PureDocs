@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://www.purebasic.com/namespace" version="1.0" creator="PureBasic 5.21 LTS (Windows - x64)">
+  <section name="config">
+    <options closefiles="1" openmode="3" name="PureDocs"/>
+  </section>
+  <section name="data">
+    <explorer view="src\" pattern="0"/>
+    <log show="1"/>
+    <lastopen date="2013-12-21 14:39" user="Markus" host="MARKUS-PC"/>
+  </section>
+  <section name="files">
+    <file name="src\PureDocs.pb">
+      <config load="0" scan="1" panel="1" warn="1" lastopen="1" panelstate="++"/>
+      <fingerprint md5="e6d0adcbc0fb017b88843bf5ee9a24ca"/>
+    </file>
+    <file name="src\Modules\Module.HTML5Generator.pb">
+      <config load="0" scan="1" panel="1" warn="1" lastopen="0" panelstate="+++"/>
+      <fingerprint md5="73ef081e61c4e9eca4a67f2d26b040a4"/>
+    </file>
+    <file name="src\Modules\Module.HTMLUtils.pb">
+      <config load="0" scan="1" panel="1" warn="1" lastopen="0" panelstate=""/>
+      <fingerprint md5="d41d8cd98f00b204e9800998ecf8427e"/>
+    </file>
+  </section>
+  <section name="targets">
+    <target name="Default Target" enabled="1" default="1">
+      <inputfile value="src\PureDocs.pb"/>
+      <outputfile value="bin\PureDocs.exe"/>
+      <commandline value="../src/Modules/Module.HTML5Generator.pb"/>
+      <executable value="bin\PureDocs.exe"/>
+      <options xpskin="1" debug="1"/>
+      <temporaryexe value="source"/>
+      <tools>
+        SYNTAX_CHECK
+      </tools>
+    </target>
+  </section>
+</project>
